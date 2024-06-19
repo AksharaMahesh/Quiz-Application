@@ -1,0 +1,120 @@
+.quiz-container{
+    font-family: "Roboto",sans-serif;
+    margin: 30px 40px;
+    padding:8px;
+    display: none;
+}
+.timer{
+   font-weight: bold;
+   text-align: right;
+}
+.timer-danger{
+    color:red;
+}
+.quiz-container h2.question{
+    font-size: 20px;
+    background-color: #d0ecff;
+    padding: 6px;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-weight:normal;
+}
+.options{
+   display:grid ;
+   text-align: left;
+   margin-bottom: 20px;
+   gap: 16px;
+}
+.quiz-container .option{
+    border:none;
+    padding:24px 32px;
+    font-size: 18px;
+    background-color:#1d3557;
+    color:white;
+    cursor: pointer;
+}
+.next-button,.retake{
+    cursor: pointer;
+    padding:10px 15px;
+    border: none;
+    background-color: rgb(209, 200, 200);
+    width: fit-content ;
+}
+.disabled{
+    pointer-events: none;
+}
+.option.correct{
+    background-color: lightgreen;
+}
+.option.incorrect{
+    background-color: rgb(207, 79, 79);
+}
+.quiz-result{
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Roboto",sans-serif;
+    padding: 16px;
+}
+
+.crct {
+    padding: 12px;
+    border:1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: lightgreen;
+   
+}
+
+ .incrct{
+    padding: 12px;
+    border:1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: red;
+    color: white;
+}
+
+.question-number{
+    font-size: 16px;
+    margin-right: 16px;
+    background-color: #1d3557;
+    color:white;
+    padding:8px;
+    border-radius: 8px;
+
+}
+
+.start-btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .start-btn-container h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .start-btn-container .start-btn {
+    background: #e63946;
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+ 
